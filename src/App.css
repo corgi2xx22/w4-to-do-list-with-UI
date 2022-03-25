@@ -4,20 +4,44 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width:335px;
+  width:100%;
+  height:100%;
+  font-family:Roboto, sans-serif; 
+  color:#b8b8b8;
+  background-image: url(./office-bg.jpeg);
+  background-size: 150%,150%;
+  animation: background;
+  animation-duration: 10s;
+  animation-direction: alternate ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 100%, 100%;
+  }
+}
+
+
 .container {
   font-family: "DM Sans", sans-serif;
   margin: 4rem auto;
   padding: 2rem 3rem 3rem;
   max-width: 500px;
-  background: #ff6666;
-  color: #fff;
-  box-shadow: 5px 5px 0px 0px rgba(100, 100, 100, 0.1);
+  background: #fffefe;
+  color: rgb(112, 112, 112);
+  box-shadow: 5px 5px 0px 0px rgba(173, 173, 173, 0.1);
 }
 .title {
   font-weight: normal;
   font-size: 2.6rem;
   letter-spacing: 0.2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(167, 166, 166, 0.3);
 }
 .title span {
   display: block;
@@ -37,7 +61,7 @@
   padding: 1.1rem 3rem;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(206, 206, 206, 0.1);
   transition: all 0.5s ease;
   transform-origin: top left;
 }
@@ -53,7 +77,7 @@
   border: none;
   background: none;
   cursor: pointer;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 input[type="checkbox"] {
   cursor: pointer;
@@ -93,7 +117,7 @@ input[type="checkbox"] {
 .form input {
   flex-grow: 1;
   border: none;
-  background: #f7f1f1;
+  background: #e6e6e6;
   padding: 0 1.5em;
   font-size: initial;
 }
@@ -101,7 +125,7 @@ input[type="checkbox"] {
 .form button {
   padding: 0 1.3rem;
   border: none;
-  background: #ff6666;
+  background: #cfcfcf;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
